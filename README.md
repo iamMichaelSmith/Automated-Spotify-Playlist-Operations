@@ -46,6 +46,19 @@ Example public submission page used in this workflow:
 Verification UX evidence screenshots are documented in:
 - `docs/DEMO.md`
 
+## End-to-End Test Flow (Step + Proof)
+
+1. Submit a song through the Squarespace page above.
+2. Submission is routed by Zapier into Discord `#website-forms` and enters the automation queue.
+3. System sends verification email asking submitter to **save the playlist** and reply with screenshot proof.
+4. Submitter replies with screenshot evidence.
+5. System approves and adds the track using staggered insertion logic.
+6. System schedules auto-removal at +30 days.
+
+Proof artifacts:
+- Playlist save page screenshot: `docs/screenshots/step-02-save-playlist-page.jpg`
+- Email reply screenshot proof: `docs/screenshots/step-03-email-reply-screenshot-proof.jpg`
+
 ## Repository Structure
 
 ```text

@@ -32,6 +32,8 @@ Squarespace page:
 
 ## Screenshots (real workflow evidence)
 
+These screenshots are from the real submission/verification journey and are used as proof-of-flow in this project.
+
 ### Step 2 — Submitter saves playlist
 
 ![Submitter saves playlist](./screenshots/step-02-save-playlist-page.jpg)
