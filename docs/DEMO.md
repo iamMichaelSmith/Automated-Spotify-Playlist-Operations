@@ -23,8 +23,23 @@ Squarespace page:
 
 1. Submit valid Spotify track URL via form.
 2. Confirm row is queued in `state/spotify_playlist_submissions.csv`.
-3. Run approval:
+3. Submitter must **save the playlist** (Spotify terminology) and reply to the verification email with screenshot proof.
+4. Run approval:
    - `python src/playlist_manager.py approve --email "artist@example.com"`
-4. Verify insertion position in output.
-5. Force cleanup test (with edited date) and run:
+5. Verify insertion position in output.
+6. Force cleanup test (with edited date) and run:
    - `python src/playlist_manager.py cleanup`
+
+## Screenshots (real workflow evidence)
+
+### Step 2 — Submitter saves playlist
+
+![Submitter saves playlist](./screenshots/step-02-save-playlist-page.jpg)
+
+Side note: wording is standardized to **"save playlist"** instead of "like playlist".
+
+### Step 3 — Submitter replies to verification email with screenshot
+
+![Email reply screenshot proof](./screenshots/step-03-email-reply-screenshot-proof.jpg)
+
+Side note: this screenshot reply is the human verification gate before auto-add.

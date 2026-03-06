@@ -43,6 +43,9 @@ Squarespace Form
 Example public submission page used in this workflow:
 - https://www.blakmarigold.com/playlist-submission
 
+Verification UX evidence screenshots are documented in:
+- `docs/DEMO.md`
+
 ## Repository Structure
 
 ```text
