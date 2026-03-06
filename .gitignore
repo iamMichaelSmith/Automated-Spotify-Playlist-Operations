@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Secrets
+.env
+*.pem
+
+# Runtime state
+state/
+memory/
+
+# IDE
+.vscode/
+.idea/
