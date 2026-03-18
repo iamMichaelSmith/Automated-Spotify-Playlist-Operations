@@ -2,6 +2,33 @@
 
 Production-style automation pipeline for managing inbound playlist submissions and lifecycle rotation.
 
+## Hiring manager snapshot
+
+This repo reads well as an automation / ops portfolio piece because it shows:
+
+- real creator-economy workflow thinking instead of toy CRUD work
+- Python scripting tied to business rules, approvals, and lifecycle cleanup
+- practical state management for submissions and active playlist entries
+- useful handoff docs for a non-author operator or teammate
+
+## Proof artifacts
+
+- Demo walkthrough: `docs/DEMO.md`
+- Verification checklist: `docs/VERIFICATION_CHECKLIST.md`
+- Architecture notes: `docs/ARCHITECTURE.md`
+- Operations notes: `docs/OPERATIONS.md`
+- Screenshots: `docs/screenshots/`
+- Sample inputs: `samples/`
+
+## Local verification status
+
+Validated in this workspace:
+
+- `python -m unittest discover -s tests -q` ✅
+- `python -m pytest -q` ⚠️ not available by default on this machine, so the repo currently verifies via built-in `unittest`
+
+If you want this to read cleaner to employers, explicitly documenting `unittest` as the default test runner is stronger than implying pytest is required.
+
 ## What this project does
 
 This system automates the end-to-end process for playlist submissions:
@@ -58,6 +85,16 @@ Verification UX evidence screenshots are documented in:
 Proof artifacts:
 - Playlist save page screenshot: `docs/screenshots/step-02-save-playlist-page.jpg`
 - Email reply screenshot proof: `docs/screenshots/step-03-email-reply-screenshot-proof.jpg`
+
+## Quality checks
+
+```bash
+python -m unittest discover -s tests -q
+```
+
+Optional:
+- use `pytest` only if you prefer it locally and already have it installed
+- CI is intentionally pinned to the built-in `unittest` command above
 
 ## Repository Structure
 
